@@ -7,3 +7,5 @@ vim.cmd("set shiftwidth=2")
 vim.cmd("ca wq w")
 vim.g.mapleader = " "
 
+-- Remap
+vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)

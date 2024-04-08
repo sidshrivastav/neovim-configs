@@ -37,6 +37,16 @@ return {
       lspconfig.pyright.setup({
         capabilities = capabilities,
       })
+      -- Go
+      lspconfig.gopls.setup({
+        capabilities = capabilities,
+        cmd = {"gopls"},
+        filetypes = {"go", "gomod", "gowork", "gotmpl"}
+      })
+      -- HTML
+      lspconfig.html.setup({
+        capabilities = capabilities,
+      })
 
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})

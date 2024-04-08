@@ -12,7 +12,7 @@ return {
 				},
 				highlights = {},
 			})
-			-- vim.cmd.colorscheme("nightly")
+			vim.cmd.colorscheme("nightly")
 		end,
 	},
 }
